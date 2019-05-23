@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/order.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="containerHeader">
+
+      <!--nav bar-->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-company-orange">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <h1 class="header">Kat's Kafe</h1>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3" id="orderahead">Order Ahead!</h4>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              First name is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName"> Last Name:</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Last name is required
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone">Phone Number:</label>
+          <input type="text" class="form-control" id="phone" placeholder="555-555-5555" required>
+          <div class="invalid-feedback">
+            Please enter your phone number
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="coffee">Coffee</label>
+            <select class="custom select d-block w-100" id="coffee">
+            <option value="">Choose...</option>
+              <optgroup label="Kat's Kafe Originals">
+      <option value="java">Java Planet</option>     
+      <option value="cafe">Café Don Pablo </option>
+           <option value="smart">Smart Ass </option>
+           <option value="death">Death Wish </option>
+           <option value="camano">Camano </option>
+           <option value="two">Two Volcanos</option>
+           <option value="sweet">Sweet Espresso </option>
+      </optgroup>
+      
+      
+      <optgroup label ="Classic Coffees">
+        <option value="espresso">Espresso</option>
+        <option value="double">Double Espresso</option>
+        <option value="macchiato">Latte Macchiato</option>
+        <option value="mocha">Mocha Frape</option>
+        <option value="latte">Latte- hot</option>
+        <option value="latte">Latte- iced</option>
+        <option value="cappuccino">Cappuccino-hot</option>
+        <option value="cappuccino">Cappuccino-iced</option>
+        <option value="americano">Americano-hot</option>
+        <option value="americano">Americano-iced</option>
+      </optgroup>
+              
+            </select>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="size">Size</label>
+            <select class="custom select d-block w-100" id="size">
+            <option value="">Choose...</option>
+              
+      <option value="sm">Small</option>
+        <option value="md">Medium</option>
+        <option value="lg">Large</option>
+        
+      
+      
+      
+      
+              
+              
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="tea">Tea</label>
+            <select class="custom select d-block w-100" id="tea">
+            <option value="">Choose...</option>
+              <optgroup label="Black">
+      <option value="berry">Berry Basket</option>
+        <option value="black">Black Currant</option>
+        <option value="bombay">Bombay Chai</option>
+        <option value="blood">Blood Orange</option>
+        <option value="chocolate">Chocolate Rose Tea</option>
+      </optgroup>
+      
+      
+      <optgroup label ="Herbal">
+       <option value="apricot">Apricot Amaretto</option>
+        <option value="belgian">Belgian Mint</option>
+        <option value="chamomile">Chamomile Mint</option>
+        <option value="ginger">Ginger Guru</option>
+        <option value="harvest">Harvest Apple Spice</option>
+      </optgroup>
+              
+              <optgroup label ="Green">
+       <option value="chai">Chai Matcha</option>
+        <option value="cherry">Cherry Marzipan</option>
+        <option value="china">China Gunpowder</option>
+        <option value="honey">Honey Yuzu</option>
+        <option value="jasmine">Jasmine Chamomile</option>
+      </optgroup>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="size">Size</label>
+            <select class="custom select d-block w-100" id="size">
+            <option value="">Choose...</option>
+              
+      <option value="sm">Small</option>
+        <option value="md">Medium</option>
+        <option value="lg">Large</option>
+        
+      
+      
+      
+      
+              
+              
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="coffee">Pastries</label>
+            <select class="custom select d-block w-100" id="pastries">
+            <option value="">Choose...</option>
+              <optgroup label="Cookies">
+      <option value="chochip">Chocolate Chip</option>
+        <option value="peabut">Peanut Butter</option>
+        <option value="raisin">Raisin</option>
+        <option value="sugar">Sugar</option>
+      </optgroup>
+      
+      
+      <optgroup label ="Danishes">
+       <option value="cheese">Cheese</option>
+        <option value="rasp">Raspberry</option>
+        <option value="apple">Apple</option>
+      </optgroup>
+              <option value="croissant">Croissant</option>
+      <option value="brioche">Brioche</option>
+              <option value="bagel">Bagel</option>
+      <option value="pie">Cream Pies</option>
+              </select>
+              </div>
+          </div>
+         <hr class="mb-4">
+       
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Payment</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-md" id="order" type="submit">Order!</button>
+          
+
+    
+      </form>
+    </div>
+
+      
+      <div id="containerFooter">
+      <p id="contact">
+        Contact
+        <br> 502-555-5555
+        <br> katskafe@gmail.com
+      </p>
+
+      <p id="location">
+        Location
+        <br> 5555 Bardstown Road
+        <br> Louisville, KY 40205
+      </p>
+
+      <a href="index.html">Home</a>
+      <p><a href="#">Back to top</a></p>
+    </div>
+     
+    
+      
+      
+      
+   </div>   
+
+    
+</body>
+
+</html>

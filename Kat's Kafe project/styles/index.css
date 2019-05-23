@@ -1,0 +1,62 @@
+#wrapper {
+  background-image: url("http://img.cadnav.com/allimg/140522/1-140522010333.jpg");
+
+}
+
+.bg-company-orange {
+  background-color: #ff8533 !important;
+}
+
+.header {
+  background-color: #ff471a;
+  height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  padding-top: 75px;
+}
+
+.footer {
+  background-color: #416d26;
+  color: #fffefe;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.left {
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.ratio-4-3{
+  width:100%;
+  position:relative;
+  background:url() 50% 50% no-repeat;
+  background-size:cover;
+  background-clip:content-box;
+}
+.ratio-4-3:before{
+	display:block;
+    content:"";
+    padding-top:75%;
+}
+
+
+img{
+ width: 100%;
+}

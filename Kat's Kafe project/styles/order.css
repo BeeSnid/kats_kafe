@@ -1,0 +1,66 @@
+#wrapper{
+  background-image: url("../images/woodgrain.jpg");
+}
+
+.bg-company-orange{
+  background-color: #ff8533 !important;
+}
+
+#orderahead{
+  font-size: 45px;
+}
+
+.header{
+  background-color: #ff471a;
+  height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  padding-top: 75px;
+ 
+}
+
+
+
+
+
+.row{
+  width: 50%;
+}
+
+#phone{
+  width: 47.5%;
+}
+
+.button{
+  margin-bottom: 20px;
+  border-radius: 40%;
+  background-color: #996633;
+  color: black;
+}
+
+#order{
+  background-color: #725409;
+  border: none;
+  margin-bottom: 15px;
+}
+
+#containerFooter{
+  background-color: #336600;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    padding-top: 80px;
+  } 
+  
+  #phone{
+    width: 46%;
+  }
+    
+  
+}
